@@ -12,4 +12,32 @@
 
 
 
+let userInput = document.getElementById("userInput")
+let addBtn = document.getElementById("addBtn")
+let taskList = []
 
+addBtn.addEventListener("click", addTask)
+userInput.addEventListener("focus", function () { userInput.value = '' })
+
+
+function addTask() {
+    let result = userInput.value
+    taskList.push(result)
+
+    let resultHtml = ''
+
+    for (let i = 0; i < taskList.length; i++) {
+        resultHtml += `<div class="tasks">
+        <div>${taskList[i]}</div>
+        <div>
+            <button>확인</button>
+            <button>삭제</button>
+        </div>
+    </div>`;
+    }
+    document.getElementById("tasks").innerHTML = resultHtml
+
+
+
+
+}

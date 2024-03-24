@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: silver;
+}
+
+.total {
+    border: 1px solid black;
+}
+
+.menuArea {
+    display: flex;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+.menuArea div {
+    padding: 1em;
+}
+
+
+.tasks {
+    justify-content: space-between;
+    display: flex;
+    padding: 1em;
+}
+
+#underLine {
+    background-color: aqua;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 60px;
+    padding: 2px;
+}
